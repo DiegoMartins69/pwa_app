@@ -1,0 +1,733 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e5e5e5;
+}
+
+body {
+    background-color: #010101;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), #010101);
+    justify-content: space-around;
+    align-items: center;
+    position: center;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 16rem;
+}
+
+
+/* section de l'image de fond */
+
+.title-box {
+    position: relative;
+}
+
+.title-box div {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .8));
+}
+
+.title-box div img {
+    margin: auto;
+    height: 10rem;
+}
+
+.title-box>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+
+/* section partie univers */
+
+.part-univers {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../img/TexteRE7.jfif);
+}
+
+.part-univers {
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+.title-univers {
+    position: absolute;
+    font-size: 6em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 45%;
+    margin-top: -5px;
+}
+
+.title-univers::selection,
+.content-univers *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-univers {
+    width: 100%;
+}
+
+.content-univers p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 6rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+
+/* section partie titre personnage */
+
+.part-title-personnage {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-personnage {
+    font-size: 6rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -20px;
+}
+
+
+/* section partie personnage */
+
+.part-ethan {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-ethan {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-ethan::selection,
+.content-ethan *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.part-title-personnage *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-ethan {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-ethan p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+.part-mia {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-mia {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-mia::selection,
+.content-mia *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-mia {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-mia p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+.part-zoe {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-zoe {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-zoe::selection,
+.content-zoe *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-zoe {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-zoe p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+
+/* section partie titre antagoniste */
+
+.part-title-antagoniste {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-antogoniste {
+    font-size: 6rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -20px;
+}
+
+
+/* section partie antagoniste */
+
+.part-jack {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-jack {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-jack::selection,
+.content-jack *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.part-title-antagoniste *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-jack {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-jack p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+.part-marguerite {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-marguerite {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-marguerite::selection,
+.content-marguerite *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-marguerite {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-marguerite p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+.part-luca {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-luca {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-luca::selection,
+.content-luca *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-luca {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-luca p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+.part-eveline {
+    border: 4mm ridge rgba(36, 36, 36, 0.3);
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-eveline {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -7rem;
+}
+
+.title-eveline::selection,
+.content-eveline *::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-eveline {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-eveline p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}
+
+
+/* section titre banned footage */
+
+.part-bannedFootage {
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.part-bannedFootage {
+    margin-top: 2rem;
+}
+
+.title-bannedFootage {
+    position: absolute;
+    font-size: 6em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 40%;
+    margin-top: -15px;
+}
+
+.title-bannedFootage::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+
+/* section partie banned footage cauchemar titre */
+
+.part-title-cauchemar {
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-cauchemar {
+    position: absolute;
+    font-size: 4em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 25px;
+    margin-top: -15px;
+}
+
+.title-cauchemar::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.part-cauchemar {
+    position: relative;
+}
+
+.content-cauchemar {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .9));
+}
+
+.part-cauchemar>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+.content-cauchemar ::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-cauchemar p {
+    font-family: resident, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 4rem;
+    margin-left: -2rem;
+}
+
+
+/*
+.content-cauchemar {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.content-cauchemar p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: -4rem;
+    margin-left: -2rem;
+}*/
+
+.part-title-chambre {
+    margin-top: 3rem;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-chambre {
+    position: absolute;
+    font-size: 4em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 25px;
+    margin-top: -15px;
+}
+
+.title-chambre::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.part-chambre {
+    position: relative;
+}
+
+.content-chambre {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .9));
+}
+
+.part-chambre>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+.content-chambre ::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-chambre p {
+    font-family: resident, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 4rem;
+    margin-left: -2rem;
+}
+
+.part-title-21 {
+    margin-top: 3rem;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-21 {
+    position: absolute;
+    font-size: 4em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 25px;
+    margin-top: -15px;
+}
+
+.title-21::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.part-21 {
+    position: relative;
+}
+
+.content-21 {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .9));
+}
+
+.part-21>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+.content-21 ::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-21 p {
+    font-family: resident, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 4rem;
+    margin-left: -2rem;
+}
+
+.part-title-fille {
+    margin-top: 3rem;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-fille {
+    position: absolute;
+    font-size: 4em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 25px;
+    margin-top: -15px;
+}
+
+.title-fille::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.part-fille {
+    position: relative;
+}
+
+.content-fille {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .9));
+}
+
+.part-fille>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+.content-fille ::selection {
+    color: rgb(255, 176, 6);
+    background: transparent;
+}
+
+.content-fille p {
+    font-family: resident, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 4rem;
+    margin-left: -2rem;
+}
+
+.buy-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid red;
+    background: linear-gradient(#000, #1a1a1a);
+}
+
+.buy-link img {
+    display: block;
+    margin: 0 auto;
+    height: 7rem;
+}
+
+.buy-link h1 {
+    font-size: 2.5rem;
+    transition: 300ms;
+}
+
+.buy-link:hover>h1 {
+    color: #f00;
+}
+
+.title-lien {
+    font-size: 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Arial, Helvetica, sans-serif;
+}
